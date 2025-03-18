@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Admin Dashboard</h2>
+<p><a href="{{ url_for('activity_log') }}">View Activity Log</a></p>
+<table>
+    <thead>
+        <tr>
+            <th>Active Duration</th>
+            <th>Distracted Duration</th>
+            <th>Asleep Duration</th>
+            <th>Look Away Duration</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{at}}</td>
+            <td>{{dt}}</td>
+            <td>{{ast}}</td>
+            <td>{{lat}}</td>  
+			</tr>
+        
+		</tbody>
+</table>
+{% endblock %}
